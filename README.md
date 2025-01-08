@@ -1,4 +1,4 @@
-<img src="./linux.png" />
+<img src="./Linux.png" />
 
 <h1 align="center">Multi scripts de modifications du système pour Arch Linux</h1>
 
