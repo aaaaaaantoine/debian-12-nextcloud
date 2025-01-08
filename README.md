@@ -1,6 +1,6 @@
 <img src="./logo.png" />
 
-<h1 align="center">Multi scripts de modifications du système GNU/Linux</h1>
+<h1 align="center">Mémo de modifications du système GNU/Linux</h1>
 
 - Modification de la [ZRAM](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/zram.sh)
 
