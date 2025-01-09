@@ -10,7 +10,7 @@
 
 - Installation de Debian [LAMP](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/debian-lamp.sh)
 
-- Installer [Nextcloud] (https://github.com/aaaaaaantoine/archlinux-conf/blob/main/nextcloud.sh) sur Debian
+- Installer [Nextcloud](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/nextcloud.sh) sur Debian
 
 ## Mémo
 
