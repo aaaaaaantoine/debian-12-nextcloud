@@ -16,4 +16,4 @@
 
 - Mémo pour [VboxManage](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/VboxManage.md)
 
-- Debian [IP Statique](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/ip-static.md)
+- Mémo Debian [IP Statique](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/ip-static.md)
