@@ -1,4 +1,4 @@
-# Mémo de commandes pour UFW
+# Mémo pour UFW
 
 L'installation de UFW
 
