@@ -2,7 +2,7 @@
 
 <h1 align="center">Mémo de modifications du système GNU/Linux</h1>
 
-# Script
+## Script
 
 - Modification de la [ZRAM](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/zram.sh)
 
@@ -12,7 +12,7 @@
 
 - Debian [IP Statique](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/ip-static.md)
 
-# Mémo
+## Mémo
 
 - Mémo pour [UFW](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/UFW.md)
 
