@@ -1,4 +1,4 @@
-# Mémo pour gérer ses VM VirtualBox
+# Mémo pour gérer ses VMs VirtualBox
 
 VBoxManage, parcourir la liste de ces machines virtuelles.
 
