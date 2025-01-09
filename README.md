@@ -8,9 +8,9 @@
 
 - Création d'une base de donnée [MariaDB](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/mariadb.sh)
 
-- Installation Serveur [LAMP](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/debian-lamp.sh) Debian
+- Serveur [LAMP](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/debian-lamp.sh) Debian
 
-- Installer [Nextcloud](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/nextcloud.sh) Debian
+- Serveur [Nextcloud](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/nextcloud.sh) Debian
 
 - Serveur FTP [vsftpd](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/debian-vsftpd.sh) Debian
 
