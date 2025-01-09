@@ -9,3 +9,5 @@
 - Mémo de commandes pour [VboxManage](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/VboxManage.md)
 
 - Installation de Debian [LAMP](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/debian-lamp.sh)
+
+- Debian [IP Statique](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/ip-static.md)
