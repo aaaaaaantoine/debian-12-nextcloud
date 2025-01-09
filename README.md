@@ -16,8 +16,8 @@
 
 ## Mémo
 
-- Mémo pour [UFW](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/UFW.md)
+- Mémo [UFW](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/UFW.md)
 
-- Mémo pour [VboxManage](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/VboxManage.md)
+- Mémo [VboxManage](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/VboxManage.md)
 
-- Mémo Debian [IP Statique](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/ip-static.md)
+- Mémo [IP Statique](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/ip-static.md) Debian
