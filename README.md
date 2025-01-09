@@ -12,7 +12,7 @@
 
 - Serveur [Nextcloud](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/nextcloud.sh) Debian
 
-- Serveur FTP [vsftpd](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/debian-vsftpd.sh) Debian
+- Serveur [FTP](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/debian-vsftpd.sh) Debian
 
 ## Mémo
 
