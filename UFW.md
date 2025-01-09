@@ -1,12 +1,6 @@
-# UFW pour (Uncomplicated Firewall)
+# Mémo de commandes pour UFW
 
 L'installation de UFW
-
-```
-sudo apt install -y ufw
-```
-
-Exemple de commandes
 
 ```
 sudo ufw allow ssh
