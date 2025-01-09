@@ -1,4 +1,4 @@
-## Objectif
+# Objectif
 
 L'objectif est de configurer une adresse IP statique sur le serveur Debian Linux.
 
@@ -11,7 +11,7 @@ sudo systemctl stop NetworkManager.service
 sudo systemctl disable NetworkManager.service
 ```
 
-## Instructions
+# Instructions
 
 ##### Activer l'adresse IP statique
 
