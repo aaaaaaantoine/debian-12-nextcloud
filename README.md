@@ -10,10 +10,10 @@
 
 - Installation de Debian [LAMP](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/debian-lamp.sh)
 
-- Debian [IP Statique](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/ip-static.md)
-
 ## Mémo
 
 - Mémo pour [UFW](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/UFW.md)
 
 - Mémo pour [VboxManage](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/VboxManage.md)
+
+- Debian [IP Statique](https://github.com/aaaaaaantoine/archlinux-conf/blob/main/ip-static.md)
