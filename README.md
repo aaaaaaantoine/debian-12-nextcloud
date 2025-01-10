@@ -66,6 +66,10 @@ Vous pouvez désormais activer le service UFW : `sudo ufw enable`
 Si vous souhaitez consulter la liste des services autorisés / interdit par le Firewall : `sudo ufw status`
 A tout moment, vous pouvez décider de le désactiver de la manière suivante : `sudo ufw disable`
 
+### Fixer l'ip de son seveur
+
+Documentation [ICI](https://github.com/aaaaaaantoine/debian-server-guide/blob/main/ip-static.md)
+
 ## Installation de LAMP pour Linux Apache MariaDB PHP
 
 Installons notre serveur [LAMP](https://github.com/aaaaaaantoine/debian-server-guide/blob/main/debian-lamp.sh)
