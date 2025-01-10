@@ -44,7 +44,7 @@ Commencez par créer un nouvel utilisateur : `usermod -a  -G  sudo  <username>`
 Générer une paire de clés ssh et la copier dans vos serveur :
 
 ```
-ssh-keygen -t rsa -b 4096
+ssh-keygen -t rsa -C 'Antoine D' -b 4096
 ssh-copy-id -i ~/.ssh/id_rsa username@remote_server
 ```
 
