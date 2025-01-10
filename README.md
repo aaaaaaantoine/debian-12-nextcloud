@@ -65,7 +65,7 @@ MaxAuthTries 3
 ClientAliveInterval	0
 ClientAliveCountMax	2
 AllowUsers user0 user1
-AllowGroups user0 user1
+AllowGroups group0 group1
 ```
 
 Pour prendre en compte les modifications, redémarrez le serveur ssh : `sudo systemctl restart sshd`
