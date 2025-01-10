@@ -20,7 +20,7 @@ sudo apt update && sudo apt full-upgrade
 
 Vous pouvez changer de mot de passe administrateur avec `sudo passwd`
 
-# Sécurisez son serveur
+## Sécurisez son serveur
 
 La sécurité de votre serveur est un élément fondamental à ne pas négliger pour la vie de votre serveur. 
 
@@ -33,7 +33,7 @@ Nous allons donc suivre les étapes suivantes :
 - Fixer l'IP de sa machine
 - Installer une interface graphique basée sur le Web
 
-### Sécuriser l'accès via SSH
+**Sécuriser l'accès via SSH**
 
 Commencez par créer un nouvel utilisateur : `usermod -a  -G  sudo  <username>` 
 
@@ -50,7 +50,8 @@ PasswordAuthentication no
 PermitRootLogin no
 ```
 
-### Installer et configurer un Firewall
+**Installer et configurer un Firewall**
+
 Un Firewall permet de filtrer les connexions entrantes et sortantes. Nous allons donc procéder à l'installation de UFW qui permet de configurer avec une certaine facilité les interfaces réseaux via **iptables**.
 
 `sudo apt install ufw -y`
@@ -67,7 +68,7 @@ Vous pouvez désormais activer le service UFW : `sudo ufw enable`
 Si vous souhaitez consulter la liste des services autorisés / interdit par le Firewall : `sudo ufw status`
 A tout moment, vous pouvez décider de le désactiver de la manière suivante : `sudo ufw disable`
 
-### Fixer l'IP de son seveur
+**Fixer l'IP de son seveur**
 
 Activer l'adresse IP statique
 
@@ -83,7 +84,7 @@ netmask 255.255.255.0
 gateway 192.168.1.1
 ```
 
-### Installer une Web Console
+**Installer une Web Console**
 
 Cockpit est une interface graphique basée sur le Web qui permet une gestion simple et intuitive des systèmes Linux. Il est conçu pour simplifier les tâches d'administration système quotidiennes telles que la surveillance des ressources système, la gestion des comptes d'utilisateurs, le démarrage et l'arrêt des services et la gestion du stockage.
 
@@ -102,7 +103,7 @@ sudo apt install apache2 mariadb-server php php-gd php-mbstring php-xml php-zip 
 sudo systemctl enable --now apache2 mariadb
 ```
 
-### Base de données MySQL / MariaDB
+**Base de données MySQL / MariaDB**
 
 Debian est livré par défaut avec le paquet mariadb-server qui est en réalité la version open source de MySQL.
 
