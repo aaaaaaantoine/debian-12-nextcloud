@@ -1,11 +1,12 @@
 <img src="./logo.png" />
 
+
 <h1 align="center">Installation d'un Serveur Debian avec Nextcloud</h1>
 
 
 # Configuration de Debian 12 Bookworm 
 
-La première étape consiste à télécharger [Debian](https://cdimage.debian.org/debian-cd/current/amd64/bt-cd/)
+La première étape consiste à télécharger Debian [NetInstall](https://cdimage.debian.org/debian-cd/current/amd64/bt-cd/)
 
 Procédez ensuite à l'installation de votre serveur avec les paramètres sans interface graphique pour plus de légéreté.
 
@@ -66,14 +67,13 @@ Vous pouvez désormais activer le service UFW : `sudo ufw enable`
 Si vous souhaitez consulter la liste des services autorisés / interdit par le Firewall : `sudo ufw status`
 A tout moment, vous pouvez décider de le désactiver de la manière suivante : `sudo ufw disable`
 
-### Fixer l'ip de son seveur
+### Fixer en dure l'IP de son seveur
 
 Documentation [ICI](https://github.com/aaaaaaantoine/debian-server-guide/blob/main/ip-static.md)
 
-## Installation de LAMP pour Linux Apache MariaDB PHP
+## Installation de LAMP (Linux Apache MariaDB PHP)
 
-Installons notre serveur [LAMP](https://github.com/aaaaaaantoine/debian-server-guide/blob/main/debian-lamp.sh)
-
+Installons notre serveur LAMP
 ```
 sudo apt update && sudo apt full-upgrade -y
 sudo apt install apache2 mariadb-server php php-gd php-mbstring php-xml php-zip php-curl php-mysql -y
