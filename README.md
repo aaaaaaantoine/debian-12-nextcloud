@@ -62,6 +62,8 @@ PermitEmptyPasswords no
 LoginGraceTime 30
 StrictModes yes
 MaxAuthTries 3
+ClientAliveInterval	0
+ClientAliveCountMax	2
 AllowUsers <utilisateur1> <utilisateur2>
 ```
 
