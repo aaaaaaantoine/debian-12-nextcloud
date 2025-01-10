@@ -53,6 +53,7 @@ Trouvez les lignes suivantes ou modifiez les :
 ```
 PasswordAuthentication yes  
 PermitRootLogin yes
+PubkeyAuthentication
 #X11Forwarding yes
 PrintLastLog no
 PermitEmptyPasswords yes
@@ -62,11 +63,13 @@ Désactivez les accès par mot de passe et sur le compte root :
 ```
 PasswordAuthentication no  
 PermitRootLogin no
+PubkeyAuthentication
 X11Forwarding no
 PrintLastLog yes
 PermitEmptyPasswords no
 LoginGraceTime 30
 StrictModes yes
+MaxAuthTries 3
 ```
 
 Pour prendre en compte les modifications, redémarrez le serveur ssh : `sudo systemctl restart sshd`
