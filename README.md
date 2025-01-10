@@ -44,7 +44,7 @@ Générer une paire de clés ssh et la copier dans vos serveur :
 
 ```
 ssh-keygen -t rsa -b 4096
-ssh-copy-id username@remote_server
+ssh-copy-id -i ~/.ssh/id_rsa username@remote_server
 ```
 
 Ouvrez le fichier de configuration du service SSH du serveur :  `sudo nano /etc/ssh/sshd_config`
