@@ -69,6 +69,8 @@ LoginGraceTime 30
 StrictModes yes
 ```
 
+Pour prendre en compte les modifications, redémarrez le serveur ssh : `sudo systemctl restart sshd`
+
 **Installer et configurer un Firewall**
 
 Un Firewall permet de filtrer les connexions entrantes et sortantes. Nous allons donc procéder à l'installation de UFW qui permet de configurer avec une certaine facilité les interfaces réseaux via **iptables**.
