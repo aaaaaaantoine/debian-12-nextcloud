@@ -88,7 +88,7 @@ gateway 192.168.1.1
 Cockpit est une interface graphique basée sur le Web qui permet une gestion simple et intuitive des systèmes Linux. Il est conçu pour simplifier les tâches d'administration système quotidiennes telles que la surveillance des ressources système, la gestion des comptes d'utilisateurs, le démarrage et l'arrêt des services et la gestion du stockage.
 
 ```
-sudo apt install -y cockpit cockpit-bridge cockpit-machines cockpit-networkmanager cockpit-packagekit cockpit-pcp cockpit-podman cockpit-storaged cockpit-system cockpit-ws ufw
+sudo apt install -y cockpit cockpit-networkmanager cockpit-packagekit cockpit-pcp cockpit-storaged cockpit-system cockpit-ws
 sudo systemctl enable --now cockpit.socket
 ```
 
