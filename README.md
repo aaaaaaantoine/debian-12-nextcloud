@@ -50,12 +50,6 @@ PasswordAuthentication no
 PermitRootLogin no
 ```
 
-### Installer une Web Console
-```
-sudo apt install -y cockpit cockpit-bridge cockpit-machines cockpit-networkmanager cockpit-packagekit cockpit-pcp cockpit-podman cockpit-storaged cockpit-system cockpit-ws ufw
-sudo systemctl enable --now cockpit.socket
-```
-
 ### Installer et configurer un Firewall
 Un Firewall permet de filtrer les connexions entrantes et sortantes. Nous allons donc procéder à l'installation de [UFW](https://github.com/aaaaaaantoine/debian-server-guide/blob/main/UFW.md) qui permet de configurer avec une certaine facilité les interfaces réseaux via **iptables**.
 
@@ -87,6 +81,15 @@ enp0s3 inet static
 address 192.168.1.11
 netmask 255.255.255.0
 gateway 192.168.1.1
+```
+
+### Installer une Web Console
+
+Cockpit est une interface graphique basée sur le Web qui permet une gestion simple et intuitive des systèmes Linux. Il est conçu pour simplifier les tâches d'administration système quotidiennes telles que la surveillance des ressources système, la gestion des comptes d'utilisateurs, le démarrage et l'arrêt des services et la gestion du stockage.
+
+```
+sudo apt install -y cockpit cockpit-bridge cockpit-machines cockpit-networkmanager cockpit-packagekit cockpit-pcp cockpit-podman cockpit-storaged cockpit-system cockpit-ws ufw
+sudo systemctl enable --now cockpit.socket
 ```
 
 ## Installation de LAMP (Linux Apache MariaDB PHP)
@@ -156,4 +159,4 @@ Apache2 vous offre la possibilité d'activer votre fichier de configuration faci
 
 Enfin, redémarrez le service Apache pour prendre en compte votre configuration : `sudo systemctl restart apache2`.
 
-En toute logique, votre application est dorénavant accessible depuis l'interface HTTP *-- qui tourne sur le port 80 de votre serveur--* à l'adresse : https://IP_Server
+En toute logique, votre application est dorénavant accessible depuis l'interface HTTP de votre serveur.
