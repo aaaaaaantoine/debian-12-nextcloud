@@ -51,7 +51,7 @@ PermitRootLogin no
 ```
 
 ### Installer et configurer un Firewall
-Un Firewall permet de filtrer les connexions entrantes et sortantes. Nous allons donc procéder à l'installation de [UFW](https://github.com/aaaaaaantoine/debian-server-guide/blob/main/UFW.md) qui permet de configurer avec une certaine facilité les interfaces réseaux via **iptables**.
+Un Firewall permet de filtrer les connexions entrantes et sortantes. Nous allons donc procéder à l'installation de UFW qui permet de configurer avec une certaine facilité les interfaces réseaux via **iptables**.
 
 `sudo apt install ufw -y`
 
