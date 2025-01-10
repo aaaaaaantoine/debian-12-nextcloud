@@ -92,6 +92,8 @@ sudo apt install -y cockpit cockpit-bridge cockpit-machines cockpit-networkmanag
 sudo systemctl enable --now cockpit.socket
 ```
 
+Cockpit écoute sur le port 9090 votre machine donc ici vous utilisez UFW : `sudo allow 9090`
+
 ## Installation de LAMP (Linux Apache MariaDB PHP)
 
 Installons notre serveur LAMP
