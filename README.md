@@ -52,8 +52,7 @@ PermitRootLogin no
 ### Installer une Web Console
 ```
 sudo apt install -y cockpit cockpit-bridge cockpit-machines cockpit-networkmanager cockpit-packagekit cockpit-pcp cockpit-podman cockpit-storaged cockpit-system cockpit-ws ufw
-sudo systemctl enable --now cockpit.socket libvirtd
-sudo usermod -a -G libvirt $USER
+sudo systemctl enable --now cockpit.socket
 ```
 
 ### Installer et configurer un Firewall
