@@ -71,6 +71,7 @@ PermitEmptyPasswords no
 LoginGraceTime 30
 StrictModes yes
 MaxAuthTries 3
+AllowUsers <utilisateur1> <utilisateur2>
 ```
 
 Pour prendre en compte les modifications, redémarrez le serveur ssh : `sudo systemctl restart sshd`
