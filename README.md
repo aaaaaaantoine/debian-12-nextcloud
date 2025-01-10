@@ -32,6 +32,7 @@ Nous allons donc suivre les étapes suivantes :
   - Restreindre l'authentification à distance avec le compte **root**.
   - Interdire la redirection graphique
   - Limiter la durée de l'authentification
+  - Limier le nombre de tentatives d'accès
 - Installer et configurer un Firewall
 - Fixer l'IP de sa machine
 - Installer une interface graphique basée sur le Web
