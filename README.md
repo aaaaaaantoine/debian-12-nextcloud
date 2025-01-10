@@ -78,14 +78,15 @@ Installons notre serveur [LAMP](https://github.com/aaaaaaantoine/debian-server-g
 sudo apt update && sudo apt full-upgrade -y
 sudo apt install apache2 mariadb-server php php-gd php-mbstring php-xml php-zip php-curl php-mysql -y
 sudo systemctl enable --now apache2 mariadb
-sudo mysql_secure_installation
 ```
 
 ### Base de données MySQL / MariaDB
 
 Debian est livré par défaut avec le paquet mariadb-server qui est en réalité la version open source de MySQL.
 
-Création de notre base de donnée [MariaDB](https://github.com/aaaaaaantoine/debian-server-guide/blob/main/mariadb.sh):
+Une fois effectué, vous devez configurer MySQL très facilement en exécutant la commande `mysql_secure_installation`. Vous pouvez laisser les valeurs par défaut suggérées par l'installateur interactif mais tâchez de définir un mot de passe au compte `root` MySQL.
+
+Création de notre base de donnée MariaDB : `sudo mysql -u root -p`
 
 ```
 # CREATE DATABASE antoine;
@@ -93,13 +94,6 @@ Création de notre base de donnée [MariaDB](https://github.com/aaaaaaantoine/de
 # FLUSH PRIVILEGES;
 # exit;
 ```
-
-Une fois effectué, vous devez configurer MySQL très facilement en exécutant la commande `mysql_secure_installation`. Vous pouvez laisser les valeurs par défaut suggérées par l'installateur interactif mais tâchez de définir un mot de passe au compte `root` MySQL.
-
-Une fois l'installation terminée, vérifiez que le service MySQL est bien lancé : `systemctl status mysqld`
-Vous pouvez tester la connexion à la base de données : `mysql -u root -p` (*saisissez votre mot de passe root*)
-
-Il vous faut dorénavant configurer les privilèges pour MariaDB, rien de bien compliqué.
 
 ## Installation de Nextcoud
 
