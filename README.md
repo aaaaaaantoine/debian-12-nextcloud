@@ -64,7 +64,8 @@ StrictModes yes
 MaxAuthTries 3
 ClientAliveInterval	0
 ClientAliveCountMax	2
-AllowUsers <utilisateur1> <utilisateur2>
+AllowUsers toto toto2
+AllowGroups user user1
 ```
 
 Pour prendre en compte les modifications, redémarrez le serveur ssh : `sudo systemctl restart sshd`
