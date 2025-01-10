@@ -112,10 +112,10 @@ Une fois effectué, vous devez configurer MySQL très facilement en exécutant l
 Création de notre base de donnée MariaDB : `sudo mysql -u root -p`
 
 ```
-# CREATE DATABASE antoine;
-# GRANT ALL ON antoine.* TO 'antoine'@'localhost' IDENTIFIED BY 'Mot_De_Passe';
-# FLUSH PRIVILEGES;
-# exit;
+CREATE DATABASE antoine;
+GRANT ALL ON antoine.* TO 'antoine'@'localhost' IDENTIFIED BY 'Mot_De_Passe';
+FLUSH PRIVILEGES;
+EXIT;
 ```
 
 ## Installation de Nextcoud
