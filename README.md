@@ -67,7 +67,7 @@ Vous pouvez désormais activer le service UFW : `sudo ufw enable`
 Si vous souhaitez consulter la liste des services autorisés / interdit par le Firewall : `sudo ufw status`
 A tout moment, vous pouvez décider de le désactiver de la manière suivante : `sudo ufw disable`
 
-### Fixer en dure l'IP de son seveur
+### Fixer l'IP de son seveur
 
 Activer l'adresse IP statique
 
@@ -121,7 +121,7 @@ sudo chown -R www-data:www-data /var/www/html/nextcloud
 
 **Paramétrage du Virtual Host**
 
-Ici on utilisera Apache :
+Ici pour la configuration, on utilisera Apache :
 Copiez le fichier de configuration Apache par défaut et renommez-le en fonction du nom de domaine sur lequel vous souhaitez l'héberger :
 `sudo cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/nextcloud.conf`
 
