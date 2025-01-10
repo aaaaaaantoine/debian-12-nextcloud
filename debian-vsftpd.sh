@@ -26,6 +26,6 @@ userlist_enable=YES
 userlist_file=/etc/vsftpd.userlist
 userlist_deny=NO" | sudo tee -a /etc/vsftpd.conf
 
-# sudo adduser antoine
-sudo echo "$USER" | sudo tee -a /etc/vsftpd.userlist
+# sudo adduser toto
+sudo echo "toto" | sudo tee -a /etc/vsftpd.userlist
 sudo systemctl restart vsftpd
