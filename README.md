@@ -50,7 +50,7 @@ ssh-copy-id -i ~/.ssh/id_rsa username@remote_server
 
 Ouvrez le fichier de configuration du service SSH du serveur :  `sudo nano /etc/ssh/sshd_config`
 
-Trouvez les lignes suivantes ou modifiez les :
+Trouvez les lignes suivantes et modifiez, ajoutez les :
 
 ```
 PasswordAuthentication no  
