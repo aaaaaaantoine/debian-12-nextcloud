@@ -51,16 +51,7 @@ ssh-copy-id -i ~/.ssh/id_rsa username@remote_server
 Ouvrez le fichier de configuration du service SSH du serveur :  `sudo nano /etc/ssh/sshd_config`
 
 Trouvez les lignes suivantes ou modifiez les :
-```
-PasswordAuthentication yes  
-PermitRootLogin yes
-PubkeyAuthentication
-#X11Forwarding yes
-PrintLastLog no
-PermitEmptyPasswords yes
-StrictModes no
-```
-Désactivez les accès par mot de passe et sur le compte root :
+
 ```
 PasswordAuthentication no  
 PermitRootLogin no
