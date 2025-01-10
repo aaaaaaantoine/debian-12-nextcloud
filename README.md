@@ -26,7 +26,7 @@ La sécurité de votre serveur est un élément fondamental à ne pas négliger 
 
 Nous allons donc suivre les étapes suivantes :
 
-- Sécuriser l'accès via SSH (cela implique de :
+- Sécuriser l'accès via SSH, cela implique de :
   - Désactiver l'authentification SSH par saisie d'un mot de passe.
   - Générer une paire de clés ssh
   - Restreindre l'authentification à distance avec le compte **root**.
