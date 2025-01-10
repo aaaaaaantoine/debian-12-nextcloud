@@ -69,7 +69,19 @@ A tout moment, vous pouvez décider de le désactiver de la manière suivante : 
 
 ### Fixer en dure l'IP de son seveur
 
-Documentation [ICI](https://github.com/aaaaaaantoine/debian-server-guide/blob/main/ip-static.md)
+Activer l'adresse IP statique
+
+Par défaut, vous trouverez la configuration suivante dans le fichier de configuration réseau /etc/network/interfaces : `sudo vim /etc/network/interfaces`
+
+Ajouter les lignes et modifiez les selon votre configuration
+
+```
+auto enp0s3 iface
+enp0s3 inet static
+address 192.168.1.11
+netmask 255.255.255.0
+gateway 192.168.1.1
+```
 
 ## Installation de LAMP (Linux Apache MariaDB PHP)
 
