@@ -27,8 +27,11 @@ La sécurité de votre serveur est un élément fondamental à ne pas négliger 
 Nous allons donc suivre les étapes suivantes :
 
 - Sécuriser l'accès via SSH (cela implique de :
-	- Désactiver l'authentification SSH par saisie d'un mot de passe.
-	- Restreindre l'authentification à distance avec le compte **root**.
+  - Désactiver l'authentification SSH par saisie d'un mot de passe.
+  - Générer une paire de clés ssh
+  - Restreindre l'authentification à distance avec le compte **root**.
+  - Interdire la redirection graphique
+  - Limiter la durée de l'authentification
 - Installer et configurer un Firewall
 - Fixer l'IP de sa machine
 - Installer une interface graphique basée sur le Web
@@ -37,17 +40,33 @@ Nous allons donc suivre les étapes suivantes :
 
 Commencez par créer un nouvel utilisateur : `usermod -a  -G  sudo  <username>` 
 
+Générer une paire de clés ssh et la copier dans vos serveur :
+
+```
+ssh-keygen -t rsa -b 4096
+ssh-copy-id username@remote_server
+```
+
 Ouvrez le fichier de configuration du service SSH du serveur :  `sudo nano /etc/ssh/sshd_config`
 
-Trouvez les lignes suivantes :
+Trouvez les lignes suivantes ou modifiez les :
 ```
 PasswordAuthentication yes  
 PermitRootLogin yes
+#X11Forwarding yes
+PrintLastLog no
+PermitEmptyPasswords yes
+StrictModes no
 ```
 Désactivez les accès par mot de passe et sur le compte root :
 ```
 PasswordAuthentication no  
 PermitRootLogin no
+X11Forwarding no
+PrintLastLog yes
+PermitEmptyPasswords no
+LoginGraceTime 30
+StrictModes yes
 ```
 
 **Installer et configurer un Firewall**
