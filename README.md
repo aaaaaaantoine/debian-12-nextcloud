@@ -15,8 +15,7 @@ Une fois l'installation effectuée, connectez-vous au serveur en SSH avec les id
 Lors de votre première connexion SSH au serveur, il faudra impérativement mettre à jour l'OS pour être sûr de bénéficier de la dernière version de l'OS qui comprennent très souvent les dernières mises à jour de sécurité de la distribution :
 
 ```
-sudo apt update
-sudo apt full-upgrade
+sudo apt update && sudo apt full-upgrade
 ```
 
 Vous pouvez changer de mot de passe administrateur avec `sudo passwd`
@@ -53,7 +52,7 @@ PermitRootLogin no
 ### Installer et configurer un Firewall
 Un Firewall permet de filtrer les connexions entrantes et sortantes. Nous allons donc procéder à l'installation de [UFW](https://github.com/aaaaaaantoine/debian-server-guide/blob/main/UFW.md) qui permet de configurer avec une certaine facilité les interfaces réseaux via **iptables**.
 
-`sudo apt install ufw`
+`sudo apt install ufw -y`
 
 Dans un premier temps faites en sorte d'activer la connexion sur les protocoles SSH, HTTP, et HTTPS :
 
@@ -87,7 +86,6 @@ gateway 192.168.1.1
 
 Installons notre serveur LAMP
 ```
-sudo apt update && sudo apt full-upgrade -y
 sudo apt install apache2 mariadb-server php php-gd php-mbstring php-xml php-zip php-curl php-mysql -y
 sudo systemctl enable --now apache2 mariadb
 ```
