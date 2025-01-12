@@ -55,7 +55,7 @@ Trouvez les lignes suivantes et modifiez, ajoutez les :
 ```
 PasswordAuthentication no  
 PermitRootLogin no
-PubkeyAuthentication
+PubkeyAuthentication yes
 X11Forwarding no
 PrintLastLog yes
 PermitEmptyPasswords no
