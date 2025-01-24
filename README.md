@@ -2,7 +2,7 @@
 
 <h1 align="center">Debian Nextcloud Serveur</h1>
 
-1. [Prérequis](https://github.com/aaaaaaantoine/debian-server-guide/edit/main/README.md#pr%C3%A9requis)
+1. [Prérequis](https://github.com/aaaaaaantoine/debian-server-guide/tree/main#pr%C3%A9requis)
 2. [Installation de la e pile LAMP](https://github.com/aaaaaaantoine/debian-server-guide/edit/main/README.md#installation-de-la-e-pile-lamp)
 3. I[nstallation de Nextcoud](https://github.com/aaaaaaantoine/debian-server-guide/edit/main/README.md#installation-de-nextcoud)
 
