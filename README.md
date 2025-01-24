@@ -4,7 +4,8 @@
 
 1. [Prérequis](https://github.com/aaaaaaantoine/debian-server-guide/tree/main#pr%C3%A9requis)
 2. [Installation de la e pile LAMP](https://github.com/aaaaaaantoine/debian-server-guide/edit/main/README.md#installation-de-la-e-pile-lamp)
-3. I[nstallation de Nextcoud](https://github.com/aaaaaaantoine/debian-server-guide/edit/main/README.md#installation-de-nextcoud)
+3. [Sécurisez son serveur]()
+4. [Installation de Nextcoud](https://github.com/aaaaaaantoine/debian-server-guide/edit/main/README.md#installation-de-nextcoud)
 
 
 # Configuration de Debian 12 Bookworm 
