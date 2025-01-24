@@ -1,11 +1,15 @@
 <img src="./logo.png" />
 
-
 <h1 align="center">Debian Nextcloud Serveur</h1>
+
+1. [Prérequis](https://github.com/aaaaaaantoine/debian-server-guide/edit/main/README.md#pr%C3%A9requis)
+2. [Installation de la e pile LAMP](https://github.com/aaaaaaantoine/debian-server-guide/edit/main/README.md#installation-de-la-e-pile-lamp)
+3. I[nstallation de Nextcoud](https://github.com/aaaaaaantoine/debian-server-guide/edit/main/README.md#installation-de-nextcoud)
 
 
 # Configuration de Debian 12 Bookworm 
 
+### Prérequis
 La première étape consiste à télécharger Debian [NetInstall](https://cdimage.debian.org/debian-cd/current/amd64/bt-cd/)
 
 Procédez ensuite à l'installation de votre serveur avec les paramètres sans interface graphique pour plus de légéreté.
@@ -20,7 +24,7 @@ sudo apt update && sudo apt full-upgrade
 
 Vous pouvez changer de mot de passe administrateur avec `sudo passwd`
 
-## Sécurisez son serveur
+### Sécurisez son serveur
 
 La sécurité de votre serveur est un élément fondamental à ne pas négliger pour la vie de votre serveur. 
 
@@ -115,7 +119,7 @@ sudo systemctl enable --now cockpit.socket
 
 Cockpit écoute sur le port 9090 votre machine donc ici vous utilisez UFW : `sudo allow 9090`
 
-## Installation de LAMP (Linux Apache MariaDB PHP)
+### Installation de la e pile LAMP
 
 Installons notre serveur LAMP
 ```
@@ -138,7 +142,7 @@ FLUSH PRIVILEGES;
 EXIT;
 ```
 
-## Installation de Nextcoud
+### Installation de Nextcoud
 
 Nextcloud est un logiciel libre de site d'hébergement de fichiers et une plateforme de collaboration. À l'origine accessible via WebDAV, n'importe quel navigateur web, ou des clients spécialisés, son architecture ouverte a permis de voir ses fonctionnalités s'étendre depuis ses origines.
 
