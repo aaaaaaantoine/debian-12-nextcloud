@@ -1,7 +1,7 @@
 <img src="./logo.png" />
 
 
-<h1 align="center">Debian Nextcloud</h1>
+<h1 align="center">Debian Nextcloud Serveur</h1>
 
 
 # Configuration de Debian 12 Bookworm 
