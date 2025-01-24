@@ -1,6 +1,6 @@
 <img src="./logo.png" />
 
-<h1 align="center">Debian Nextcloud Serveur</h1>
+# Debian 12 Nextcloud Serveur
 
 1. [Prérequis](https://github.com/aaaaaaantoine/debian-server-guide/tree/main#pr%C3%A9requis)
 2. [Sécurisez son serveur]()
