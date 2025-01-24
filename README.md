@@ -3,12 +3,12 @@
 <h1 align="center">Debian Nextcloud Serveur</h1>
 
 1. [Prérequis](https://github.com/aaaaaaantoine/debian-server-guide/tree/main#pr%C3%A9requis)
-2. [Installation de la e pile LAMP](https://github.com/aaaaaaantoine/debian-server-guide/edit/main/README.md#installation-de-la-e-pile-lamp)
-3. [Sécurisez son serveur]()
+2. [Sécurisez son serveur]()
+3. [Installation de la de pile LAMP](https://github.com/aaaaaaantoine/debian-server-guide/edit/main/README.md#installation-de-la-e-pile-lamp)
 4. [Installation de Nextcoud](https://github.com/aaaaaaantoine/debian-server-guide/edit/main/README.md#installation-de-nextcoud)
 
 
-# Configuration de Debian 12 Bookworm 
+**Configuration de Debian 12 Bookworm** 
 
 ### Prérequis
 La première étape consiste à télécharger Debian [NetInstall](https://cdimage.debian.org/debian-cd/current/amd64/bt-cd/)
@@ -120,7 +120,7 @@ sudo systemctl enable --now cockpit.socket
 
 Cockpit écoute sur le port 9090 votre machine donc ici vous utilisez UFW : `sudo allow 9090`
 
-### Installation de la e pile LAMP
+### Installation de la de pile LAMP
 
 Installons notre serveur LAMP
 ```
@@ -128,7 +128,7 @@ sudo apt install apache2 mariadb-server php php-gd php-mbstring php-xml php-zip 
 sudo systemctl enable --now apache2 mariadb
 ```
 
-**Base de données MySQL / MariaDB**
+**création d'une base de données MySQL / MariaDB**
 
 Debian est livré par défaut avec le paquet mariadb-server qui est en réalité la version open source de MySQL.
 
