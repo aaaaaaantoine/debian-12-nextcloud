@@ -40,14 +40,14 @@ Nous allons donc suivre les étapes suivantes :
 
 Commencez par créer un nouvel utilisateur : `usermod -a  -G  sudo  <username>` 
 
-Générer une paire de clés ssh et la copier dans votre serveur :
+Générer une paire de clés ssh **depuis le client** et la copier dans votre serveur :
 
 ```
 ssh-keygen -t rsa -C 'Antoine D' -b 4096
 ssh-copy-id -i ~/.ssh/id_rsa username@remote_server
 ```
 
-Ouvrez le fichier de configuration du service SSH du serveur :  `nano /etc/ssh/sshd_config`
+Ouvrez le fichier de configuration du service SSH du serveur :  `vim /etc/ssh/sshd_config`
 
 Trouvez les lignes suivantes et modifiez, ajoutez les :
 
@@ -63,8 +63,6 @@ StrictModes yes
 MaxAuthTries 3
 ClientAliveInterval 0
 ClientAliveCountMax 2
-AllowUsers user0 user1
-AllowGroups group0 group1
 ```
 
 Pour prendre en compte les modifications, redémarrez le serveur ssh : `systemctl restart sshd`
@@ -83,7 +81,7 @@ ufw allow http
 ufw allow https
 ```
 
-Vous pouvez désormais activer le service UFW : `sudo ufw enable`
+Vous pouvez désormais activer le service UFW : `ufw enable`
 Si vous souhaitez consulter la liste des services autorisés / interdit par le Firewall : `ufw status`
 A tout moment, vous pouvez décider de le désactiver de la manière suivante : `ufw disable`
 
