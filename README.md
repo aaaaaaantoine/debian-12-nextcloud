@@ -40,7 +40,6 @@ Nous allons donc suivre les étapes suivantes :
   - Limier le nombre de tentatives d'accès
 - Installer et configurer un Firewall
 - Fixer l'IP de sa machine
-- Installer une interface graphique basée sur le Web
 
 **Sécuriser l'accès via SSH**
 
@@ -108,17 +107,6 @@ address 192.168.1.11
 netmask 255.255.255.0
 gateway 192.168.1.1
 ```
-
-**Installer une Web Console**
-
-Cockpit est une interface graphique basée sur le Web qui permet une gestion simple et intuitive des systèmes Linux. Il est conçu pour simplifier les tâches d'administration système quotidiennes telles que la surveillance des ressources système, la gestion des comptes d'utilisateurs, le démarrage et l'arrêt des services et la gestion du stockage.
-
-```
-sudo apt install -y cockpit cockpit-networkmanager cockpit-packagekit cockpit-pcp cockpit-storaged cockpit-system cockpit-ws
-sudo systemctl enable --now cockpit.socket
-```
-
-Cockpit écoute sur le port 9090 votre machine donc ici vous utilisez UFW : `sudo allow 9090`
 
 ### Installation de la de pile LAMP
 
