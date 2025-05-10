@@ -46,7 +46,7 @@ systemctl enable --now apache2 mariadb
 
 ## 🔒 MariaDB
 
-- Création d'une base de données MySQL / MariaDB
+Création d'une base de données MySQL/MariaDB
 
 *Debian est livré par défaut avec le paquet mariadb-server qui est en réalité la version open source de MySQL.*
 
@@ -75,7 +75,7 @@ EXIT;
 
 ## 📁 Nextcoud
 
-Nextcloud est un logiciel libre de site d'hébergement de fichiers et une plateforme de collaboration. À l'origine accessible via WebDAV, n'importe quel navigateur web, ou des clients spécialisés, son architecture ouverte a permis de voir ses fonctionnalités s'étendre depuis ses origines.
+*Nextcloud est un logiciel libre de site d'hébergement de fichiers et une plateforme de collaboration. À l'origine accessible via WebDAV, n'importe quel navigateur web, ou des clients spécialisés, son architecture ouverte a permis de voir ses fonctionnalités s'étendre depuis ses origines.*
 
 ```
 cd /tmp
@@ -89,13 +89,13 @@ chown -R www-data:www-data /var/www/html/nextcloud
 
 ## 👻 Virtual Host
 
-- Paramétrage du Virtual Host
+Paramétrage du Virtual Host
 
 ```sh
 cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/nextcloud.conf
 ```
 
-- Editez-le pour le paramétrer de la manière suivante
+Editez-le pour le paramétrer de la manière suivante
 ```sh
 vim /etc/apache2/sites-available/nextcloud.conf
 ```
