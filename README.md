@@ -33,7 +33,7 @@ apt update && apt full-upgrade
 
 ---
 
-## Installation de la de pile LAMP
+## 🌍 Installation de la de pile LAMP
 
 LAMP pour Linux, Apache, MariaDB et PHP
 
@@ -44,7 +44,7 @@ systemctl enable --now apache2 mariadb
 
 ---
 
-## MariaDB
+## 🔒 MariaDB
 
 - Création d'une base de données MySQL / MariaDB
 
@@ -60,7 +60,9 @@ Vous pouvez laisser les valeurs par défaut suggérées par l'installateur inter
 
 Création de notre base de donnée MariaDB 
 
-`mysql -u root -p`
+```sh
+mysql -u root -p
+```
 
 ```
 CREATE DATABASE test;
@@ -71,7 +73,7 @@ EXIT;
 
 ---
 
-## Nextcoud
+## 📁 Nextcoud
 
 Nextcloud est un logiciel libre de site d'hébergement de fichiers et une plateforme de collaboration. À l'origine accessible via WebDAV, n'importe quel navigateur web, ou des clients spécialisés, son architecture ouverte a permis de voir ses fonctionnalités s'étendre depuis ses origines.
 
@@ -85,7 +87,7 @@ chown -R www-data:www-data /var/www/html/nextcloud
 
 ---
 
-## Virtual Host
+## 👻 Virtual Host
 
 - Paramétrage du Virtual Host
 
