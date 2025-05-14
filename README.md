@@ -11,7 +11,7 @@
 <img src="https://img.shields.io/github/languages/top/aaaaaaantoine/debian-post-install?style&color=5D6D7E" alt="GitHub top language" />
 <img src="https://img.shields.io/github/languages/code-size/aaaaaaantoine/debian-post-install?style&color=5D6D7E" alt="GitHub code size in bytes" />
 <img src="https://img.shields.io/github/commit-activity/m/aaaaaaantoine/debian-post-install?style&color=5D6D7E" alt="GitHub commit activity" />
-<img src="https://img.shields.io/github/license/aaaaaaantoine/debian-post-install?style&color=5D6D7E" alt="GitHub license" />
+<img src="https://img.shields.io/badge/License-GPL%20v3-yellow.svg?style&color=5D6D7E" alt="GitHub license" />
 </div>
 
 ---
