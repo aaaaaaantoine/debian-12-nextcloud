@@ -4,7 +4,8 @@
 ## Mise à jour du système
 
 ```sh
-apt update && apt full-upgrade
+sudo apt update
+sudo apt full-upgrade -y
 ```
 
 
@@ -13,21 +14,21 @@ apt update && apt full-upgrade
 * Installation de php et apache.
 
 ```sh
-apt install apache2 php php-gd php-mbstring php-xml php-zip php-curl php-mysql
-systemctl enable --now apache2
+sudo apt install apache2 php php-gd php-mbstring php-xml php-zip php-curl php-mysql
+sudo systemctl enable --now apache2
 ```
 
 * Installation de MariaDB.
 
 ```sh
-apt install -y mariadb-server
-systemctl enable --now mariadb
+sudo apt install -y mariadb-server
+sudo systemctl enable --now mariadb
 ```
 
 * Création de la base données MariaDB pour Nextcloud.
 
 ```sh
-mysql_secure_installation
+sudo mysql_secure_installation
 ```
 
 Vous pouvez laisser les valeurs par défaut suggérées par l'installateur interactif mais tâchez de définir un mot de passe au compte `root` MySQL.
