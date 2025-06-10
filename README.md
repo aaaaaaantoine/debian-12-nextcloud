@@ -25,7 +25,7 @@ sudo apt install -y mariadb-server
 sudo systemctl enable --now mariadb
 ```
 
-* Création de la base données MariaDB pour Nextcloud.
+* Initiation de MariaDB.
 
 ```sh
 sudo mysql_secure_installation
