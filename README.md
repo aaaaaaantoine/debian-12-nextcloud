@@ -1,56 +1,30 @@
-<div align="center">
-<h1 align="center">
-<br>Debian Nextcloud Serveur
-</h1>
-<h3>◦ Développé avec les logiciels et outils ci-dessous.</h3>
+# Installer Nextcloud une Debian 12 Serveur
 
-<p align="center">
-<img src="https://img.shields.io/badge/GNU%20Bash-4EAA25.svg?style&logo=GNU-Bash&logoColor=white" alt="GNU%20Bash" />
-<img src="https://img.shields.io/badge/Markdown-000000.svg?style&logo=Markdown&logoColor=white" alt="Markdown" />
-</p>
-<img src="https://img.shields.io/github/languages/top/aaaaaaantoine/debian-post-install?style&color=5D6D7E" alt="GitHub top language" />
-<img src="https://img.shields.io/github/languages/code-size/aaaaaaantoine/debian-post-install?style&color=5D6D7E" alt="GitHub code size in bytes" />
-<img src="https://img.shields.io/github/commit-activity/m/aaaaaaantoine/debian-post-install?style&color=5D6D7E" alt="GitHub commit activity" />
-<img src="https://img.shields.io/badge/License-GPL%20v3-yellow.svg?style&color=5D6D7E" alt="GitHub license" />
-</div>
 
----
-
-## 📍 Objectifs
-
-- Mettre à jour son système
-- Installation de la de pile LAMP
-- Installation de Nextcoud
-- Configuration du Virtual Host
-
----
-
-## 🚀 Mise à jour du système
+## Mise à jour du système
 
 ```sh
 apt update && apt full-upgrade
 ```
 
----
 
-## 🌍 Installation de la de pile LAMP
+## Installer la de pile LAMP
 
-LAMP pour Linux, Apache, MariaDB et PHP
+* Installation de php et apache.
 
 ```sh
-apt install apache2 mariadb-server php php-gd php-mbstring php-xml php-zip php-curl php-mysql -y
-systemctl enable --now apache2 mariadb
+apt install apache2 php php-gd php-mbstring php-xml php-zip php-curl php-mysql
+systemctl enable --now apache2
 ```
 
----
+* Installation de MariaDB.
 
-## 🔒 MariaDB
+```sh
+apt install -y mariadb-server
+systemctl enable --now mariadb
+```
 
-Création d'une base de données MySQL/MariaDB
-
-*Debian est livré par défaut avec le paquet mariadb-server qui est en réalité la version open source de MySQL.*
-
-Une fois effectué, vous devez configurer MySQL très facilement en exécutant la commande:
+* Création de la base données MariaDB pour Nextcloud.
 
 ```sh
 mysql_secure_installation
@@ -63,17 +37,14 @@ Création de notre base de donnée MariaDB
 ```sh
 mysql -u root -p
 ```
-
-```
+```sh
 CREATE DATABASE test;
 GRANT ALL ON antoine.* TO 'test'@'localhost' IDENTIFIED BY 'Mot_De_Passe';
 FLUSH PRIVILEGES;
 EXIT;
 ```
 
----
-
-## 📁 Nextcoud
+## Installation et configuration de Nextcoud
 
 *Nextcloud est un logiciel libre de site d'hébergement de fichiers et une plateforme de collaboration. À l'origine accessible via WebDAV, n'importe quel navigateur web, ou des clients spécialisés, son architecture ouverte a permis de voir ses fonctionnalités s'étendre depuis ses origines.*
 
@@ -85,22 +56,14 @@ mv nextcloud /var/www/html/nextcloud
 chown -R www-data:www-data /var/www/html/nextcloud
 ```
 
----
-
-## 👻 Virtual Host
-
-Paramétrage du Virtual Host
-
+* Configuratuon des Virtual Host
 ```sh
 cp /etc/apache2/sites-available/000-default.conf /etc/apache2/sites-available/nextcloud.conf
 ```
-
-Editez-le pour le paramétrer de la manière suivante
 ```sh
 vim /etc/apache2/sites-available/nextcloud.conf
 ```
-
-```
+```sh
 <VirtualHost *:80>
      DocumentRoot /var/www/html/nextcloud/
      ServerName *IP_Server*
